@@ -1,0 +1,10 @@
+<div>
+  <h2>Update task</h2>
+  <form [formGroup]="todoForm">
+    <label for="todo-id">ID:</label>
+    <input id="todo-id" type="text" formControlName="id" [value]="chosenTodoId" placeholder="Task Id" />
+    <label for="todo-text">Task text:</label>
+    <input id="todo-text" type="text" formControlName="text" [value]="chosenTodoText" placeholder="Task Text" />
+    <button class="btn btn-success" (click)="onSubmit()">Update</button>
+  </form>
+</div>
